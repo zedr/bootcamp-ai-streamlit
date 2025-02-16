@@ -6,7 +6,7 @@ import notebook2  # Importa il secondo notebook
 st.title("Progetti Streamlit - Analisi di Dataset")
 
 # Creazione di due tab per separare le analisi
-tab1, tab2 = st.tabs(["Dataset Hollywood Movied", "Dataset Eventi culturali in Italia"])
+tab1, tab2 = st.tabs(["Dataset Hollywood Movies", "Dataset Eventi culturali in Italia"])
 
 # Prima scheda: Analisi del primo dataset - Hollywood Movies
 with tab1:

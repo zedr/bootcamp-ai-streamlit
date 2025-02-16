@@ -1,7 +1,6 @@
-matplotlib
-seaborn
-geopandas
-pandas
-requests
 streamlit
 plotly
+pandas
+numpy
+requests
+beautifulsoup4
