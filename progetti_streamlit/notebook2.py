@@ -99,7 +99,7 @@ def main():
         st.markdown("""
         ### 📊 Grafico a barre: Distribuzione dei luoghi culturali per provincia
 
-        Il grafico a barre mostra la distribuzione dei luoghi culturali per provincia in Italia, escludendo i casi in cui la provincia è "Sconosciuto". Sono state selezionate le prime 10 province con il maggior numero di luoghi culturali. Le prime 10 province, evidenziate nel grafico, mostrano una forte concentrazione di luoghi culturali, indicando che alcune aree hanno una presenza culturale significativamente maggiore rispetto ad altre. Le province con le barre più alte sono quelle con il numero maggiore di strutture culturali (Roma e Firenze). La distribuzione dei luoghi culturali tra le province mostra una forte disparità, con alcune province che emergono nettamente per numero di luoghi, mentre altre sono meno rappresentate. Questo potrebbe essere il riflesso di differenze economiche, storiche e sociali tra le diverse aree del paese. L'analisi potrebbe suggerire che investimenti in cultura nelle province meno rappresentate potrebbero contribuire a bilanciare la distribuzione culturale a livello nazionale e ad aumentare l'accesso alla cultura per un pubblico più ampio, anche nelle aree meno centrali.
+        Il grafico a barre mostra la distribuzione dei luoghi culturali per provincia in Italia, escludendo i casi in cui la provincia è "Sconosciuto". Sono state selezionate le prime 10 province con il maggior numero di luoghi culturali. Le province con le barre più alte sono quelle con il numero maggiore di strutture culturali (Roma e Firenze). La distribuzione dei luoghi culturali tra le province mostra una forte disparità, con alcune province che emergono nettamente per numero di luoghi, mentre altre sono meno rappresentate. Questo potrebbe essere il riflesso di differenze economiche, storiche e sociali tra le diverse aree del paese. L'analisi potrebbe suggerire che investimenti in cultura nelle province meno rappresentate potrebbero contribuire a bilanciare la distribuzione culturale a livello nazionale e ad aumentare l'accesso alla cultura per un pubblico più ampio, anche nelle aree meno centrali.
         """)
 
         # Analisi 3: Distribuzione delle strutture per città
@@ -118,7 +118,7 @@ def main():
         st.markdown("""
         ### 📊 Grafico a barre: Distribuzione dei luoghi culturali per città
 
-        Le città con il numero maggiore di luoghi culturali sono facilmente identificabili grazie alle barre più alte (Roma e Firenze, Siena e Genova a seguire). Queste città rappresentano i principali centri culturali del paese, con una forte presenza di strutture dedicate alla cultura, come musei, teatri e gallerie. L'analisi suggerisce che, sebbene le principali città siano ben servite da strutture culturali, ci potrebbe essere un'opportunità di crescita per le città più piccole o meno centrali, che potrebbero beneficiare di investimenti mirati nel settore culturale per migliorare la loro offerta e attrarre più visitatori.
+        Le città con il numero maggiore di luoghi culturali sono facilmente identificabili grazie alle barre più alte (Roma e Firenze, Siena e Napoli a seguire). Queste città rappresentano i principali centri culturali del paese, con una forte presenza di strutture dedicate alla cultura, come musei, teatri e gallerie. L'analisi suggerisce che, sebbene le principali città siano ben servite da strutture culturali, ci potrebbe essere un'opportunità di crescita per le città più piccole o meno centrali, che potrebbero beneficiare di investimenti mirati nel settore culturale per migliorare la loro offerta e attrarre più visitatori.
         """)
 
         # Analisi 4: Mappa della distribuzione dei luoghi culturali per regione
@@ -139,7 +139,7 @@ def main():
         st.markdown("""
         ### 🌍 Mappa tematica-coropletica: Distribuzione geografica dei luoghi culturali
 
-        Il grafico che stai visualizzando è una mappa tematica o mappa coropletica. In una mappa coropletica, le aree geografiche (in questo caso, le regioni italiane) sono colorate in base a una variabile quantitativa (in questo caso, il numero di luoghi culturali per regione). Il colore delle regioni varia a seconda del valore della variabile, permettendo di evidenziare le aree con valori più alti o più bassi. Le regioni con una maggiore concentrazione di luoghi culturali sono evidenziate con tonalità più scure, mentre quelle con una presenza inferiore sono più chiare. Questo grafico fornisce una visione visiva della distribuzione geografica dei luoghi culturali in Italia, evidenziando le aree che potrebbero richiedere più attenzione o interventi di sviluppo in termini di accesso alla cultura.
+        Il grafico visualizzato è una mappa tematica o mappa coropletica. In una mappa coropletica, le aree geografiche (in questo caso, le regioni italiane) sono colorate in base a una variabile quantitativa (in questo caso, il numero di luoghi culturali per regione). Il colore delle regioni varia a seconda del valore considerato, permettendo di evidenziare le aree con valori più alti o più bassi. Le regioni con una maggiore concentrazione di luoghi culturali sono evidenziate con tonalità più scure, mentre quelle con una presenza inferiore sono più chiare. Questo grafico fornisce una visione della distribuzione geografica dei luoghi culturali in Italia, evidenziando le aree che potrebbero richiedere più attenzione o interventi di sviluppo in termini di accesso alla cultura.
         """)
 
         # Analisi 5: Distribuzione percentuale dei luoghi culturali per regione
@@ -159,7 +159,7 @@ def main():
         st.markdown("""
         ### 📊 Grafico a torta: Distribuzione percentuale dei luoghi culturali per regione
 
-        Il grafico a torta mostra la distribuzione percentuale dei luoghi culturali per regione in Italia. Le prime 10 regioni sono rappresentate con le fette più grandi, mentre le regioni minori sono riunite nella categoria "Altre". Questo grafico evidenzia come la distribuzione dei luoghi culturali sia concentrata in alcune regioni e come altre abbiano una presenza culturale marginale. La maggiore parte dei luoghi culturali si trova in un numero limitato di regioni, il che suggerisce una possibile necessità di politiche culturali più inclusive a livello nazionale.
+        Il grafico a torta mostra la distribuzione percentuale dei luoghi culturali per regione in Italia. Le prime 10 regioni sono rappresentate con le fette più grandi, mentre le regioni minori sono riunite nella categoria "Altre". Questo grafico mostra la distribuzione dei luoghi culturali e suggerisce una possibile necessità di politiche culturali più inclusive a livello nazionale.
         """)
 
 # Avvio della funzione main
