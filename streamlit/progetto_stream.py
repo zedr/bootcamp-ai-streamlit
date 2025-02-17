@@ -5,7 +5,7 @@ import notebook1  # Importa il primo notebook
 st.title("Progetto Streamlit - Analisi di un dataset")
 
 # Creazione di una tab
-tab1= st.abs(["Dataset Hollywood Movies"])
+tab1= st.tabs(["Dataset Hollywood Movies"])
 
 # Prima scheda: Analisi del primo dataset - Hollywood Movies
 with tab1:
