@@ -9,6 +9,20 @@ import streamlit as st
 # URL del dataset
 url = 'https://dati.beniculturali.it/dataset/dataset-eventiMeseCorrente.json'
 
+headers = {
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+}
+
+try:
+    # Aumenta il tempo di timeout
+    response = requests.get(url, headers=headers, timeout=30)  # Timeout di 30 secondi
+    response.raise_for_status()  # Verifica se la risposta è OK (codice 200)
+    data = response.json()  # Analizza la risposta JSON
+    print(data)  # O fai altro con i dati
+except requests.exceptions.Timeout:
+    print("La connessione al server ha impiegato troppo tempo per rispondere.")
+except requests.exceptions.RequestException as e:
+    print(f"Errore nella richiesta: {e}")
 
 # Funzione per ottenere il label
 def get_label(item):
