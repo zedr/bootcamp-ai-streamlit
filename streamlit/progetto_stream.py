@@ -1,13 +1,7 @@
 import streamlit as st
-import notebook1  # Importa il primo notebook
 
-# Titolo dell'app
-st.title("Progetto Streamlit - Analisi di un dataset")
+# Carica il tuo script Python del notebook
+with open('notebook1.py') as f:
+    code = f.read()
 
-# Creazione di una tab
-tab1= st.tabs(["Dataset Hollywood Movies"])
-
-# Prima scheda: Analisi del primo dataset - Hollywood Movies
-with tab1:
-    st.header("Analisi del primo dataset - Hollywood Movies")
-    notebook1.main()
+st.code(code, language='python')
