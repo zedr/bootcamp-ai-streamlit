@@ -1,12 +1,14 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import os
 
 
-# Funzione per caricare i dati con il percorso assoluto
+# Funzione per caricare i dati con il percorso relativo
 @st.cache_data
 def load_data():
-    file_path = r"C:\Users\giuli\PycharmProjects\bootcamp-ai-streamlit\progetti_streamlit\HollywoodMovies.csv"
+    # Costruisce il percorso relativo
+    file_path = os.path.join(os.path.dirname(__file__), 'HollywoodMovies.csv')
     return pd.read_csv(file_path)
 
 
