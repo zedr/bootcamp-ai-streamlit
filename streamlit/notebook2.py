@@ -9,6 +9,7 @@ import streamlit as st
 # URL del dataset
 url = 'https://dati.beniculturali.it/dataset/dataset-eventiMeseCorrente.json'
 
+st.title("Analisi del dataset - Eventi culturali in Italia 🌍")
 
 # Funzione per ottenere il label
 def get_label(item):
