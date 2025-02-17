@@ -1,7 +1,0 @@
-.gitignore
-
-.idea
-__pycache__
-env_3_11/
-.test_envg
-.DS_Store
