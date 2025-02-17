@@ -10,8 +10,10 @@ import streamlit as st
 url = 'https://dati.beniculturali.it/dataset/dataset-eventiMeseCorrente.json'
 
 headers = {
-    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3"
+    "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/85.0.4183.121 Safari/537.36"
 }
+response = requests.get(url, headers=headers, timeout=30)
+
 
 try:
     # Aumenta il tempo di timeout
@@ -41,7 +43,7 @@ def get_label(item):
 # Funzione per caricare i dati
 def load_data():
     try:
-        response = requests.get(url)
+        response = requests.get(url, timeout=30, headers=headers)
         if response.status_code == 200:
             data = response.json()
             if "@graph" in data:
