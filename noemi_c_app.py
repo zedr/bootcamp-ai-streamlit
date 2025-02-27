@@ -19,18 +19,15 @@ uploaded_file = st.file_uploader("Carica un file CSV", type=["csv"])
 
 @st.cache_data
 def load_data(file):
-    df = pd.read_csv(file, sep=';', encoding='latin1')
-    df.columns = ['Anno', 'Tipologia', 'Numero Premi/Sussidi', 'Importo Complessivo (€)',
-                  'Modalità di Assegnazione', 'Numero Candidati', 'Numero Premi/Sussidi Erogati']
-    numeric_columns = ['Numero Premi/Sussidi', 'Importo Complessivo (€)', 'Numero Candidati',
-                       'Numero Premi/Sussidi Erogati']
-    df[numeric_columns] = df[numeric_columns].apply(pd.to_numeric, errors='coerce')
+    df = pd.read_csv(file, sep=',', encoding='latin1')
+
     return df
 
 
 if uploaded_file:
     df = load_data(uploaded_file)
     st.success("Dati caricati con successo!")
+    st.write(df)
 
     # Dashboard Interattiva
     st.header("Dashboard Interattiva")
@@ -42,7 +39,7 @@ if uploaded_file:
 
     # Grafico interattivo con Plotly
     st.subheader("Grafico Interattivo")
-    fig = px.scatter(df, x=selected_x_var, y=selected_y_var, color="Tipologia",
+    fig = px.scatter(df, x=selected_x_var, y=selected_y_var, color= selected_y_var,
                      title=f"{selected_y_var} vs {selected_x_var}", template="plotly_white")
     st.plotly_chart(fig)
 
